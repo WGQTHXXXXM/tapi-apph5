@@ -1,0 +1,76 @@
+@import "_reset.scss";
+@import 'quill.core';
+@import 'quill.snow';
+@import 'quill.bubble';
+@import "quill-editor";
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+.page {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &.grey {
+        background: #f6f6f6;
+    }
+}
+.news-box {
+    padding:0 20px;
+    .title {
+        padding-top: 15px;
+        font-size: 24px;
+        line-height: 33px;
+        color: #333;
+    }
+    .meta-content {
+        margin: 15px 0;
+        & * {
+            vertical-align: middle;
+        }
+        a {
+            display: inline-block;
+        }
+        .photo {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .channel {
+            padding-right: 20px;
+            color: #333;
+        }
+        .date {
+            color: #959595;
+        }
+    }
+    .content {
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0;
+        color: #666;
+    }
+    .source {
+        padding: 30px 0;
+        margin-bottom: 20px;
+        color: #a1a1a1;
+        a {
+            color: #576b95;
+            text-decoration: none;
+        }
+        .end {
+            text-align: center;
+        }
+    }
+}
+.about-box {
+    background: #fff;
+    .content {
+        padding: 15px 20px;
+        color: #666;
+        margin-bottom: 40px;
+    }
+}
